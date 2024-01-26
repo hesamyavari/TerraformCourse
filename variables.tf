@@ -15,7 +15,7 @@ variable "enviroment" {
     default = {
     create_by  = "eu cloud"
     application  = "infra as code"
-    enviroment = "test"
+    enviroment = "prod"
   }
 }  
 variable "rg_name" {
