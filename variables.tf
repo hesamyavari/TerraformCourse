@@ -15,11 +15,11 @@ variable "enviroment" {
     default = {
     create_by  = "eu cloud"
     application  = "infra as code"
-    enviroment = "prod"
+    enviroment = "Prod"
   }
 }  
 variable "rg_name" {
     type = string
     description = ""
-    default = "prod-rg"
+    default = "Prod-rg"
 }
