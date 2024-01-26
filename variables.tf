@@ -21,5 +21,5 @@ variable "enviroment" {
 variable "rg_name" {
     type = string
     description = ""
-    default = "test-rg"
+    default = "prod-rg"
 }
