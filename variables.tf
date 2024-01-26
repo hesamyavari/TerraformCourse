@@ -13,9 +13,9 @@ variable "resource_group_name_prefix" {
 variable "enviroment" {
     type = map(string)
     default = {
-    dev  = "deployment"
-    prod  = "Production"
-    test = "test"
+    create_by  = "eu cloud"
+    application  = "infra as code"
+    enviroment = "test"
   }
 }  
 variable "rg_name" {
