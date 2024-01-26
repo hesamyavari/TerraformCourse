@@ -11,9 +11,12 @@ variable "resource_group_name_prefix" {
 }
 
 variable "enviroment" {
-    type = string
-    description = "enviroment of project"
-    default = ""
+    type = map(string)
+    default = {
+    dev  = "deployment"
+    prod  = "Production"
+    test = "test"
+  }
 }  
 variable "rg_name" {
     type = string
