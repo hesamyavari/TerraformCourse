@@ -11,15 +11,15 @@ variable "resource_group_name_prefix" {
 }
 
 variable "enviroment" {
-    type = map(string)
-    default = {
-    create_by  = "eu cloud"
-    application  = "infra as code"
-    enviroment = "prod"
+  type = map(string)
+  default = {
+    create_by   = "eu cloud"
+    application = "infra as code"
+    enviroment  = "UAT"
   }
-}  
+}
 variable "rg_name" {
-    type = string
-    description = ""
-    default = "test-rg"
+  type        = string
+  description = ""
+  default     = "UAT-rg"
 }
