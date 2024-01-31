@@ -1,3 +1,7 @@
+variable "managed_by" {
+  type    = string
+  default = "Hassan Yavari"
+}
 variable "resource_group_location" {
   type        = string
   default     = "eastus"
@@ -11,15 +15,16 @@ variable "resource_group_name_prefix" {
 }
 
 variable "enviroment" {
-    type = map(string)
-    default = {
-    create_by  = "eu cloud"
-    application  = "infra as code"
-    enviroment = "Test"
+  type = map(string)
+  default = {
+    create_by   = "eu cloud"
+    application = "infra as code"
+    enviroment  = "Test"
   }
-}  
+
+}
 variable "rg_name" {
-    type = string
-    description = ""
-    default = "Test-rg"
+  type        = string
+  description = ""
+  default     = "Test-rg"
 }
